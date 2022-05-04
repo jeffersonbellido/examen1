@@ -1,5 +1,6 @@
 # examen1
 1er primer examen MODULO 4
+
 PARA LA PARTE DE KVM:
 
 1.- En una consola de PowerShell (en modo administrador se debe correr) con la
@@ -38,9 +39,9 @@ PARA EL USO DE TERRAFORM
 
 1. Instalar Terraform:
       
-      sudo apt install wget curl unzip
-      TER_VER=`curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_name | cut -d: -f2 | tr -d \"\,\v | awk '{$1=$1};1'`
-      wget https://releases.hashicorp.com/terraform/${TER_VER}/terraform_${TER_VER}_linux_amd64.zip
+       sudo apt install wget curl unzip
+       TER_VER=`curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_name | cut -d: -f2 | tr -d \"\,\v | awk '{$1=$1};1'`
+       wget https://releases.hashicorp.com/terraform/${TER_VER}/terraform_${TER_VER}_linux_amd64.zip
 
 2.- Una vez que, el archivo este en la maquina virtual, es necesario copiar el binario en /usr/local/bin:
        
